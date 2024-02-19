@@ -12,12 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     <header>
@@ -133,7 +127,39 @@
 
           <div class="col-md-10">
             <div class="listing_project">
-              <p>Projects</p>
+              <p>Projects Detail</p>
+            </div>
+            <div class="listing_project_block_1">
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Name</b></p>
+                  <p class="block_detail_listing">Solar Project</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Code:</b></p>
+                  <p class="block_detail_listing">GH0038</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Location:</b></p>
+                  <p class="block_detail_listing">Delhi</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>No. of Packages:</b></p>
+                  <p class="block_detail_listing">6</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Capacity:</b></p>
+                  <p class="block_detail_listing">232</p>
+                </div>
+              </div>
             </div>
             <div class="search_filter_outers ms-auto">
               <div class="search_main">
@@ -170,6 +196,50 @@
                 </div>
               </div>
               <div class="create_listing_project">
+                <a
+                  class="vendor_btn vendor_maine_content"
+                  data-toggle="modal"
+                  data-target="#contactModal"
+                  >+ Create Package</a
+                >
+
+                <div
+                  class="modal fade"
+                  id="contactModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="contactModalLabel"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">
+                          Create Package
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body trigger_listing">
+                        <!-- Add your modal content here -->
+                        <p class="project_manager_bidding">
+                          You don't have access for this Feature.
+                        </p>
+                        <button href="#" class="btn btn-success">Done</button>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- Add additional buttons if needed -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="filter_main">
                   <button fdprocessedid="wyyigxh">
                     <span>
@@ -198,33 +268,38 @@
                   <tr>
                     <th><input type="checkbox" /></th>
                     <th class="vendor_tabels">
-                      Project Name
+                      Package No. <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Package Name<img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Description
                       <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      Project Code <img src="images/code.png" alt="" />
+                      Category <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      Project Location
+                      Sub Category
                       <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      Capacity <img src="images/code.png" alt="" />
-                    </th>
-                    <th class="vendor_tabels">
-                      No. of Packages
+                      BOQ Qty
                       <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      COD
+                      Package Creation Date
                       <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
                       Status <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      Others
-                      <img src="images/code.png" alt="" />
+                      Department <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Due Date <img src="images/code.png" alt="" />
                     </th>
                   </tr>
                 </thead>
@@ -232,90 +307,102 @@
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td class="block_solar">
-                      <a href="Projectdetailbuyerbidding.html">Solar Project</a>
-                    </td>
-                    <td>AVD001</td>
-                    <td>Rajasthan, India</td>
-                    <td>50 MW</td>
-                    <td>3</td>
-                    <td>25-01-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td>001</td>
+                    <td>Solar Module Supply</td>
+                    <td>High-efficiency modules</td>
+                    <td>Electrical</td>
+                    <td>Module Supply</td>
+                    <td>1500</td>
+                    <td>03-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Planning</p></td>
+                    <td>Procurement</td>
+                    <td>03-01-2024</td>
                   </tr>
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Wind Project</td>
-                    <td>AVD002</td>
-                    <td>Gujarat, India</td>
-                    <td>75 MW</td>
-                    <td>6</td>
-                    <td>28-02-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
-                  </tr>
-
-                  <tr class="maine_tr_vendor">
-                    <td><input type="checkbox" /></td>
-
-                    <td>Hydro Project</td>
-                    <td>AVD003</td>
-                    <td>Himachal Pradesh, India</td>
-                    <td>25 MW</td>
-                    <td>7</td>
-                    <td>18-03-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
-                  </tr>
-                  <tr class="maine_tr_vendor">
-                    <td><input type="checkbox" /></td>
-
-                    <td>Biomass Project</td>
-                    <td>AVD004</td>
-                    <td>Maharashtra, India</td>
-                    <td>40 MW</td>
-                    <td>3</td>
-                    <td>05-05-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
-                  </tr>
-                  <tr class="maine_tr_vendor">
-                    <td><input type="checkbox" /></td>
-
-                    <td>Solar Project</td>
-                    <td>AVD005</td>
-                    <td>Punjab, India</td>
-                    <td>60 MW</td>
-                    <td>8</td>
-                    <td>02-06-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td>002</td>
+                    <td>Inverter Supply</td>
+                    <td>Grid-tied inverters</td>
+                    <td>Electrical</td>
+                    <td>Inverter</td>
+                    <td>30</td>
+                    <td>04-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Ordered</p></td>
+                    <td>Procurement</td>
+                    <td>04-01-2024</td>
                   </tr>
 
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Wind Project</td>
-                    <td>AVD006</td>
-                    <td>Kerala, India</td>
-                    <td>35 MW</td>
-                    <td>2</td>
-                    <td>22-06-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td>003</td>
+                    <td>Civil Works</td>
+                    <td>Construction</td>
+                    <td>Civil</td>
+                    <td>Civil Works</td>
+                    <td>200</td>
+                    <td>05-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Delivered</p></td>
+                    <td>Procurement</td>
+                    <td>05-01-2024</td>
                   </tr>
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Hydro Project</td>
-                    <td>AVD007</td>
-                    <td>Karnataka, India</td>
-                    <td>45 MW</td>
-                    <td>3</td>
-                    <td>17-07-2022</td>
+                    <td>004</td>
+                    <td>Area Grading</td>
+                    <td>Land preparation</td>
+                    <td>Civil</td>
+                    <td>Area Grading</td>
+                    <td>10000</td>
+                    <td>07-01-2024</td>
                     <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td>Procurement</td>
+                    <td>07-01-2024</td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>005</td>
+                    <td>Engineering Studies</td>
+                    <td>Feasibility studies</td>
+                    <td>Consultancy</td>
+                    <td>Power Transformer</td>
+                    <td>5</td>
+                    <td>10-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Completed</p></td>
+                    <td>Engineering</td>
+                    <td>10-01-2024</td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>006</td>
+                    <td>Erection Services</td>
+                    <td>Equipment installation</td>
+                    <td>Mechanical</td>
+                    <td>Soil Investigation</td>
+                    <td>25</td>
+                    <td>12-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Scheduled</p></td>
+                    <td>Scheduled</td>
+                    <td>12-01-2024</td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>007</td>
+                    <td>Transformer Supply</td>
+                    <td>Power transformers</td>
+                    <td>Electrical</td>
+                    <td>BOS Electrical</td>
+                    <td>10</td>
+                    <td>21-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Awaiting</p></td>
+                    <td>Procurement</td>
+                    <td>21-01-2024</td>
                   </tr>
                 </tbody>
               </table>
@@ -366,12 +453,13 @@
     </section>
 
     <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
+
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Your custom JavaScript -->
   </body>
 </html>

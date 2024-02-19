@@ -12,12 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     <header>
@@ -133,8 +127,9 @@
 
           <div class="col-md-10">
             <div class="listing_project">
-              <p>Projects</p>
+              <p>Package</p>
             </div>
+
             <div class="search_filter_outers ms-auto">
               <div class="search_main">
                 <div id="custom-search-input">
@@ -170,6 +165,10 @@
                 </div>
               </div>
               <div class="create_listing_project">
+                <a href="Rfqcreationform.html" class="vendor_btn vendor"
+                  >+ Create New RFQ</a
+                >
+
                 <div class="filter_main">
                   <button fdprocessedid="wyyigxh">
                     <span>
@@ -198,11 +197,10 @@
                   <tr>
                     <th><input type="checkbox" /></th>
                     <th class="vendor_tabels">
-                      Project Name
-                      <img src="images/code.png" alt="" />
+                      Project Name <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      Project Code <img src="images/code.png" alt="" />
+                      Project Code<img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
                       Project Location
@@ -212,19 +210,49 @@
                       Capacity <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      No. of Packages
+                      Project Creation Date
                       <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      COD
+                      COD - As per PPA <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Package Code <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Package Name <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Package Type <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Package Category <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Package Creation Date<img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      BOQ <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      BOM <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Tender Drawing <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Technical Specification
                       <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      Status <img src="images/code.png" alt="" />
+                      RFQ Code <img src="images/code.png" alt="" />
                     </th>
                     <th class="vendor_tabels">
-                      Others
-                      <img src="images/code.png" alt="" />
+                      RFQ Date <img src="images/code.png" alt="" />
+                    </th>
+
+                    <th class="vendor_tabels">
+                      RFQ Status <img src="images/code.png" alt="" />
                     </th>
                   </tr>
                 </thead>
@@ -232,90 +260,158 @@
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td class="block_solar">
-                      <a href="Projectdetailbuyerbidding.html">Solar Project</a>
-                    </td>
-                    <td>AVD001</td>
+                    <td class="block_solar">Solar Array Sector</td>
+                    <td>PV001</td>
                     <td>Rajasthan, India</td>
                     <td>50 MW</td>
-                    <td>3</td>
-                    <td>25-01-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
+                    <td>15-01-2022</td>
+                    <td>01-12-2022</td>
+                    <td>PKG1001</td>
+                    <td>Solar Panels</td>
+                    <td>Material</td>
+                    <td>Solar</td>
+                    <td>20-01-2022</td>
+                    <td>120</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
                     <td></td>
+                    <td></td>
+                    <td><p class="maine_inprogess_listing">Pending</p></td>
                   </tr>
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Wind Project</td>
-                    <td>AVD002</td>
+                    <td>Wind Farm North</td>
+                    <td>WF002</td>
                     <td>Gujarat, India</td>
                     <td>75 MW</td>
-                    <td>6</td>
+                    <td>10-02-2022</td>
+                    <td>15-12-2022</td>
+                    <td>PKG1002</td>
+                    <td>Turbine Blades</td>
+                    <td>Component</td>
+                    <td>Wind</td>
+                    <td>20-02-2022</td>
+                    <td>200</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>RFQ002</td>
                     <td>28-02-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td><p class="maine_inprogess_listing">Approved</p></td>
                   </tr>
 
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Hydro Project</td>
-                    <td>AVD003</td>
+                    <td>Hydro Plant Delta</td>
+                    <td>HY003</td>
                     <td>Himachal Pradesh, India</td>
                     <td>25 MW</td>
-                    <td>7</td>
+                    <td>05-03-2022</td>
+                    <td>20-01-2023</td>
+                    <td>PKG1003</td>
+                    <td>Control Systems</td>
+                    <td>Equipment</td>
+                    <td>Hydro</td>
+                    <td>12-03-2022</td>
+                    <td>80</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>RFQ003</td>
                     <td>18-03-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td><p class="maine_inprogess_listing">Closed</p></td>
                   </tr>
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Biomass Project</td>
-                    <td>AVD004</td>
+                    <td>Geo Thermal East</td>
+                    <td>GE004</td>
                     <td>Maharashtra, India</td>
                     <td>40 MW</td>
-                    <td>3</td>
+                    <td>22-04-2022</td>
+                    <td>05-02-2023</td>
+                    <td>PKG1004</td>
+                    <td>Piping Modules</td>
+                    <td>Material</td>
+                    <td>Geothermal</td>
+                    <td>30-04-2022</td>
+                    <td>150</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>RFQ004</td>
                     <td>05-05-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td><p class="maine_inprogess_listing">In Review</p></td>
                   </tr>
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Solar Project</td>
-                    <td>AVD005</td>
+                    <td>Geo Thermal East</td>
+                    <td>BM005</td>
                     <td>Punjab, India</td>
                     <td>60 MW</td>
-                    <td>8</td>
+                    <td>18-05-2022</td>
+                    <td>10-03-2023</td>
+                    <td>PKG1005</td>
+                    <td>Conveyor System</td>
+                    <td>Material</td>
+                    <td>Biomass</td>
+                    <td>25-05-2022</td>
+                    <td>95</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>RFQ005</td>
                     <td>02-06-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td><p class="maine_inprogess_listing">Approved</p></td>
                   </tr>
 
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Wind Project</td>
-                    <td>AVD006</td>
+                    <td>Tidal Wave Alpha</td>
+                    <td>TW006</td>
                     <td>Kerala, India</td>
                     <td>35 MW</td>
-                    <td>2</td>
+                    <td>09-06-2022</td>
+                    <td>15-04-2023</td>
+                    <td>PKG1006</td>
+                    <td>Turbine Assembly</td>
+                    <td>Equipment</td>
+                    <td>Tidal</td>
+                    <td>15-06-2022</td>
+                    <td>110</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>RFQ006</td>
                     <td>22-06-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
-                    <td></td>
+                    <td><p class="maine_inprogess_listing">Closed</p></td>
                   </tr>
                   <tr class="maine_tr_vendor">
                     <td><input type="checkbox" /></td>
 
-                    <td>Hydro Project</td>
-                    <td>AVD007</td>
+                    <td>Energy Storage X</td>
+                    <td>ES007</td>
                     <td>Karnataka, India</td>
                     <td>45 MW</td>
-                    <td>3</td>
-                    <td>17-07-2022</td>
-                    <td><p class="maine_inprogess_listing">In Progress</p></td>
+                    <td>03-07-2022</td>
+                    <td>25-05-2023</td>
+                    <td>PKG1007</td>
+                    <td>Battery Packs</td>
+                    <td>Material</td>
+                    <td>Storage</td>
+                    <td>10-07-2022</td>
+                    <td>130</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
                     <td></td>
+                    <td></td>
+                    <td><p class="maine_inprogess_listing">Pending</p></td>
                   </tr>
                 </tbody>
               </table>
@@ -366,12 +462,13 @@
     </section>
 
     <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
+
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Your custom JavaScript -->
   </body>
 </html>
