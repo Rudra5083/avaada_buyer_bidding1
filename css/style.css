@@ -1864,7 +1864,7 @@ header {
 .seclected_form_detail_first {
   display: flex;
   align-items: center;
-  width: 20%;
+  width: 30%;
   gap: 1rem;
 }
 .seclected_form_detail_first1 {
@@ -1874,7 +1874,7 @@ header {
   gap: 1rem;
 }
 .seclected_form_detail1 {
-  width: 18%;
+  width: 32%;
 }
 .create_listing_project a {
   text-decoration: none;
@@ -2439,4 +2439,20 @@ tbody tr:nth-child(odd) {
 
 a {
   text-decoration: none !important;
+}
+.footer-modal {
+  justify-content: flex-start;
+}
+.vendor_btns {
+  padding: 5px;
+  border-radius: 6px;
+}
+.detail a {
+  text-decoration: none !important;
+}
+
+.create_listing_projects {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
