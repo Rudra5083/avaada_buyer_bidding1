@@ -1881,6 +1881,8 @@ header {
   display: flex;
   align-items: center;
   font-size: 13px;
+  border-radius: 6px;
+  padding: 6px;
 }
 .maine_inprogess_listing_manager {
   width: 13rem;
@@ -2446,6 +2448,7 @@ a {
 .vendor_btns {
   padding: 5px;
   border-radius: 6px;
+  font-size: 13px;
 }
 .detail a {
   text-decoration: none !important;
@@ -2455,4 +2458,15 @@ a {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.block_listing_detail {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: #000;
+}
+.trophy_listing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem rem;
 }

@@ -31,6 +31,137 @@
       .table tr p {
         margin-bottom: 0 !important;
       }
+
+      .header_lineitem {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .header-tb {
+        color: #000;
+        font-size: 16px;
+        padding: 7px 18px;
+        border-radius: 25px;
+
+        background: #d9d9d9;
+      }
+
+      .line-tb {
+        color: #fff;
+        font-size: 16px;
+        background: #44aafb;
+        padding: 7px 18px;
+        border-radius: 25px;
+        left: -15px;
+        position: relative;
+      }
+
+      .tble-sty .btn-outline-success {
+        padding: 2px 11px;
+      }
+
+      .tble-sty .btn-outline-danger {
+        padding: 2px 11px;
+      }
+
+      .bor-tp {
+        border-top: #dee2e6 solid 1px !important;
+      }
+
+      /* new code */
+
+      .listing_projectss {
+        display: flex;
+        margin: 20px 0 20px 0;
+      }
+
+      .extend_evaluation {
+        display: flex;
+        margin-left: auto;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .jobw_well {
+        background: #6d6d6d;
+        border-radius: 15px;
+        border-top-right-radius: 0;
+        color: #fff;
+        padding: 7px 10px;
+        width: 210px;
+        box-sizing: border-box;
+        margin: 19px;
+        margin-left: auto;
+        text-align: center;
+      }
+
+      .time-am {
+        color: #6d6d6d;
+        font-size: 11px;
+        width: 66px;
+        margin-left: auto;
+        margin-top: -13px;
+      }
+
+      .icon_type {
+        display: flex;
+        margin: 0 0 9px 10px;
+      }
+
+      .typehere-bx {
+        color: #000;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 10px;
+      }
+
+      .bot_just {
+        color: #6d6d6d;
+        font-size: 12px;
+        margin-left: 3.2rem;
+      }
+
+      .comments_main {
+        margin: 24px 0;
+      }
+
+      .comments_main h3 {
+        color: #444444;
+        margin-left: 7.5rem;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .comments_main_in {
+        display: flex;
+        justify-content: center;
+      }
+
+      .comments_in {
+        border: #cbcbcb solid 1px;
+        border-radius: 4px;
+        width: 322px;
+        margin-right: 15px;
+      }
+      .comments_in:last-child {
+        margin-right: 0;
+      }
+
+      .type_reply {
+        color: #9f9494;
+        display: flex;
+        padding: 14px 16px;
+        margin-top: 14px;
+        font-size: 14px;
+        border-top: #e4e3e3 solid 1px;
+      }
+
+      .type_reply input {
+        outline: none !important;
+        border: none;
+        width: 280px;
+      }
     </style>
     <link
       rel="stylesheet"
@@ -196,21 +327,21 @@
               </p>
               <div style="display: flex; align-items: center; gap: 1rem">
                 <button
-                  style="font-size: 14px"
+                  style="font-size: 13px; border-radius: 6px; padding: 6px"
                   class="vendor_btn vendor_maine_content1"
                   href="#"
                 >
                   Award Vednor
                 </button>
                 <button
-                  style="font-size: 14px"
+                  style="font-size: 13px; border-radius: 6px; padding: 6px"
                   class="vendor_btn vendor_maine_content1"
                   href="#"
                 >
                   Extend Validity
                 </button>
                 <button
-                  style="font-size: 14px"
+                  style="font-size: 13px; border-radius: 6px; padding: 6px"
                   class="vendor_btn vendor_maine_content1"
                   href="#"
                 >
@@ -254,147 +385,229 @@
                 </div>
               </div>
             </div>
+            <div class="header_lineitem">
+              <span class="header-tb">Header</span
+              ><span class="line-tb">Line Items</span>
+            </div>
+
             <table
-              class="table table-bordered"
+              class="table table-bordered tble-sty"
               style="width: 80%; margin: auto"
             >
               <thead>
-                <tr>
-                  <th style="text-align: center; border: none">BOQ</th>
-                  <th style="text-align: center; border: none">QTY</th>
-                  <th>
-                    <div >
-                        <div style="display: flex;align-items: center;
-                        justify-content: space-between;">
-                      <p style="font-size:18px;">Vendor A</p>
-                      <img src="images/GroupVendor (1).png">
-                    </div>
-                    <p style="color:#7E7E7E; font-size:12px;font-weight:400;">24-1-2024 | 12:45 AM</p>
-                      
-                    </div>
+                <tr style="border-top: none">
+                  <th
+                    style="text-align: center; border: none; border-top: none"
+                  >
+                    BOQ
                   </th>
-                  <th>
+                  <th
+                    style="text-align: center; border: none; border-top: none"
+                  >
+                    QTY
+                  </th>
+                  <th class="bor-tp">
                     <div>
-                        <div style="display: flex;align-items: center;
-                        justify-content: space-between;">
-                      <p><b>Vendor B</b></p>
-                      <img src="images/Vendor2 (1).png">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <p><b>Vendor A</b></p>
+                        <img src="images/Vendor_1.png" />
                       </div>
-                      <p style="color:#7E7E7E; font-size:12px;font-weight:400;">24-1-2024 | 12:45 AM</p>
+                      <p
+                        style="
+                          color: #7e7e7e;
+                          font-size: 12px;
+                          font-weight: 400;
+                        "
+                      >
+                        24-1-2024 | 12:45 AM
+                      </p>
                     </div>
                   </th>
-                  <th>
+                  <th class="bor-tp">
                     <div>
-                        <div style="display: flex;align-items: center;
-                        justify-content: space-between;">
-                      <p><b>Vendor C</b></p>
-                      <img src="images/Vendor3.png">
-                        </div>
-                        <p style="color:#7E7E7E; font-size:12px;font-weight:400;">24-1-2024 | 12:45 AM</p>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <p><b>Vendor B</b></p>
+                        <img src="images/Vendor_2.png" />
+                      </div>
+                      <p
+                        style="
+                          color: #7e7e7e;
+                          font-size: 12px;
+                          font-weight: 400;
+                        "
+                      >
+                        24-1-2024 | 12:45 AM
+                      </p>
+                    </div>
+                  </th>
+                  <th class="bor-tp">
+                    <div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <p><b>Vendor C</b></p>
+                        <img src="images/Vendor_3.png" />
+                      </div>
+                      <p
+                        style="
+                          color: #7e7e7e;
+                          font-size: 12px;
+                          font-weight: 400;
+                        "
+                      >
+                        24-1-2024 | 12:45 AM
+                      </p>
                     </div>
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                    <td style="display: flex;gap:1rem;">
-                        <img src="images/GroupVendor (2).png">
-                        <p><b>Laptop</b></p>
-                    </td>
+                  <td style="display: flex; gap: 1rem">
+                    <img
+                      src="images/arrow_vendor.png"
+                      width="20px"
+                      height="20px"
+                    />
+                    <p><b>Laptop</b></p>
+                  </td>
                   <td>12</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td><b></b></td>
+                  <td><b></b></td>
+                  <td><b></b></td>
                 </tr>
                 <tr>
-                  <td><p style="margin-left:38px;">Price</p></td>
+                  <td style="display: flex; gap: 1rem">
+                    <p style="margin-left: 36px"><b>Price</b></p>
+                  </td>
                   <td></td>
-                  <td style="background-color: #e8fafb"><b>Rs. 300</b></td>
+                  <td style="background-color: #e8fafb">
+                    <p><b>₹ 300</b></p>
+                  </td>
                   <td style="background-color: #fdecf0"><b>xxxx</b></td>
                   <td style="background-color: #f5effc"><b>xxxx</b></td>
                 </tr>
                 <tr>
-                    <td><p style="margin-left:38px;">Amount</p></td>
-                    <td></td>
-                    <td style="background-color: #e8fafb"><b>Rs. 200</b></td>
-                    <td style="background-color: #fdecf0"><b>xxxx</b></td>
-                    <td style="background-color: #f5effc"></td>
-                  </tr>
-                  <tr>
-                    <td><p style="margin-left:38px;">Ranking</p></td>
-                    <td></td>
-                    <td style="background-color: #e8fafb">
-                        <div style="display: flex; gap:1rem;">
-                            <img src="images/trophy.png" alt="">
-                            <p><b>1</b></p>
-                            </div>
-                    </td>
-              
-                 
-                    <td style="background-color: #fdecf0">
-                        <div style="display: flex; gap:1rem;">
-                            <img src="images/trophy.png">
-                            <p><b>2</b></p>
-                            </div></td>
-                    <td style="background-color: #f5effc">
+                  <td style="display: flex; gap: 1rem">
+                    <p style="margin-left: 36px"><b>Amount</b></p>
+                  </td>
+                  <td></td>
+                  <td style="background-color: #e8fafb">
+                    <p><b>₹ 200</b></p>
+                  </td>
+                  <td style="background-color: #fdecf0"><b>xxxx</b></td>
+                  <td style="background-color: #f5effc"><b></b></td>
+                </tr>
+                <tr>
+                  <td style="display: flex; gap: 1rem">
+                    <p style="margin-left: 36px"><b>Ranking</b></p>
+                  </td>
+                  <td></td>
+                  <td style="background-color: #e8fafb">
+                    <div class="trophy_listing">
+                      <img src="images/trophy.png" alt="" />
+                      <p><b>1</b></p>
+                    </div>
+                  </td>
+                  <td style="background-color: #fdecf0">
+                    <div class="trophy_listing">
+                      <img src="images/trophy.png" alt="" /><b>2</b>
+                    </div>
+                  </td>
+                  <td style="background-color: #f5effc">
+                    <div class="trophy_listing">
+                      <img src="images/trophy.png" alt="" /><b>3</b>
+                    </div>
+                  </td>
+                </tr>
 
-                        <div style="display: flex; gap:1rem;">
-                            <img src="images/trophy.png">
-                            <p><b>3</b></p>
-                            </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="display: flex;gap:1rem;">
-                      <img src="images/GroupVendor (2).png">
-                      <p><b>Chairs</b></p>
+                <tr>
+                  <td style="display: flex; gap: 1rem">
+                    <img
+                      src="images/arrow_vendor.png"
+                      width="20px"
+                      height="20px"
+                    />
+                    <p><b>Chairs</b></p>
                   </td>
-                    <td>8</td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                  </tr>
-                  <tr>
-                    <td style="display: flex;gap:1rem;">
-                      <img src="images/GroupVendor (2).png">
-                      <p><b>Computer</b></p>
+                  <td>8</td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                </tr>
+                <tr>
+                  <td style="display: flex; gap: 1rem">
+                    <img
+                      src="images/arrow_vendor.png"
+                      width="20px"
+                      height="20px"
+                    />
+                    <p><b>Computer</b></p>
                   </td>
-                    <td>4</td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                  </tr>
-                  <tr>
-                    <td style="display: flex;gap:1rem;">
-                      <img src="images/GroupVendor (2).png">
-                      <p><b>Hardisk Accessories</b></p>
+                  <td>4</td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                </tr>
+                <tr>
+                  <td style="display: flex; gap: 1rem">
+                    <img
+                      src="images/arrow_vendor.png"
+                      width="20px"
+                      height="20px"
+                    />
+                    <p><b>Hardisk Accessories</b></p>
                   </td>
-                    <td>2</td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                  </tr>
-                  <tr>
-                    <td style="display: flex;gap:1rem;">
-                      <img src="images/GroupVendor (2).png">
-                      <p><b>Laptop Charger</b></p>
+                  <td>2</td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                </tr>
+                <tr>
+                  <td style="display: flex; gap: 1rem">
+                    <img
+                      src="images/arrow_vendor.png"
+                      width="20px"
+                      height="20px"
+                    />
+                    <p><b>Laptop Charger</b></p>
                   </td>
-                    <td>12</td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                  </tr>
-                  <tr>
-                    <td style="display: flex;gap:1rem;">
-                      <img src="images/GroupVendor (2).png">
-                      <p><b>Tables</b></p>
+                  <td>12</td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                </tr>
+                <tr>
+                  <td style="display: flex; gap: 1rem">
+                    <img
+                      src="images/arrow_vendor.png"
+                      width="20px"
+                      height="20px"
+                    />
+                    <p><b>Tables</b></p>
                   </td>
-                    <td>8</td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                    <td><b>xxxx</b></td>
-                  </tr>
-          
+                  <td>8</td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                  <td><b>xxxx</b></td>
+                </tr>
+
                 <tr>
                   <td
                     style="
@@ -412,7 +625,7 @@
                       background-color: #f2f2f2;
                     "
                   >
-                    <h2>22</h2>
+                    <h2>46</h2>
                   </td>
                   <td
                     style="
@@ -444,121 +657,367 @@
                 </tr>
                 <tr class="custom-borders">
                   <td class="border-top border-bottom text-end">
-                    <p style="color:#444444;font-size:14px;"><b>Tender Drawing</b></p>
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Tender Drawing</b>
+                    </p>
                   </td>
                   <td></td>
-                  <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                  <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                  <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png" />
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
                 </tr>
                 <tr class="custom-borders">
-                    <td class="border-top border-bottom text-end">
-                      <p style="color:#444444;font-size:14px;"><b>Technical Specification</b></p>
-                    </td>
-                    <td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Not attached</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td></td>
-                  </tr>
+                  <td class="border-top border-bottom text-end">
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Technical Specification</b>
+                    </p>
+                  </td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                </tr>
                 <tr class="custom-borders">
                   <td class="border-top border-bottom text-end">
                     <p></p>
                   </td>
-                  <td>
-                  <td class="border-top border-bottom"><p style="color: #3AB54A; font-size: 14px;">Approved</p></td>
-                  <td class="border-top border-bottom"><p style="color: #3AB54A; font-size: 14px;">Approved</p></td>
-                  <td class="border-top border-bottom"><p style="color: #3AB54A; font-size: 14px;">Approved</p></td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p>
+                      <button type="button" class="btn btn-outline-success">
+                        Approve
+                      </button>
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p>
+                      <button type="button" class="btn btn-outline-success">
+                        Approve
+                      </button>
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p>
+                      <button type="button" class="btn btn-outline-success">
+                        Approve
+                      </button>
+                    </p>
+                  </td>
                 </tr>
                 <tr class="custom-borders">
-                    <td class="border-top border-bottom text-end">
-                        <p style="color:#444444;font-size:14px;"><b>Payment Terms</b></p>
-                    </td>
-                    <td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                  </tr>
-                  <tr class="custom-borders">
-                    <td class="border-top border-bottom text-end">
-                        <p style="color:#444444;font-size:14px;"><b>Liquidated Damages</b></p>
-                    </td>
-                    <td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">2%</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">5%</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">3%</p></td>
-                  </tr>
-                  <tr class="custom-borders">
-                    <td class="border-top border-bottom text-end">
-                        <p style="color:#444444;font-size:14px;"><b>Over all LD cap</b></p>
-                    
-                    </td>
-                    <td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                  </tr>
-                  <tr class="custom-borders">
-                    <td class="border-top border-bottom text-end">
-                        <p style="color:#444444;font-size:14px;"><b>Defect Liability Period</b></p>
-                    </td>
-                    <td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">30 Days</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">45 Days</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">60 Days</p></td>
-                  </tr>
-                  <tr class="custom-borders">
-                    <td class="border-top border-bottom text-end">
-                        <p style="color:#444444;font-size:14px;"><b>Warrenty</b></p>
-                    </td>
-                    <td>
-                    <td class="border-top border-bottom"><p style="color: #3AB54A; font-size: 14px;">Yes</p></td>
-                    <td class="border-top border-bottom"><p style="color: red; font-size: 14px;">No</p></td>
-                    <td class="border-top border-bottom"><p style="color: #3AB54A; font-size: 14px;">Yes</p></td>
-                  </tr>
-                  <tr class="custom-borders">
-                    <td class="border-top border-bottom text-end">
-                        <p style="color:#444444;font-size:14px;"><b>Capacity</b></p>
-                    </td>
-                    <td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                    <td class="border-top border-bottom"><p style="font-size: 14px; color:#444444;font-weight:400;">Attached</p></td>
-                  </tr>
-            
+                  <td class="border-top border-bottom text-end">
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Payment Terms</b>
+                    </p>
+                  </td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                </tr>
+                <tr class="custom-borders">
+                  <td class="border-top border-bottom text-end">
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Liquidated Damages</b>
+                    </p>
+                  </td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      2%
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      5%
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      3%
+                    </p>
+                  </td>
+                </tr>
+                <tr class="custom-borders">
+                  <td class="border-top border-bottom text-end">
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Over all LD cap</b>
+                    </p>
+                  </td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                </tr>
+                <tr class="custom-borders">
+                  <td class="border-top border-bottom text-end">
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Defect Liability Period</b>
+                    </p>
+                  </td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      3 months
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      2 months
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      2.5 months
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="custom-borders">
+                  <td class="border-top border-bottom text-end">
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Service Contract Period</b>
+                    </p>
+                  </td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      30 Days
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      45 Days
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      60 Days
+                    </p>
+                  </td>
+                </tr>
+
+                <tr class="custom-borders">
+                  <td class="border-top border-bottom text-end">
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Warrenty</b>
+                    </p>
+                  </td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p style="color: #3ab54a; font-size: 14px">Yes</p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p style="color: red; font-size: 14px">No</p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p style="color: #3ab54a; font-size: 14px">Yes</p>
+                  </td>
+                </tr>
+                <tr class="custom-borders">
+                  <td class="border-top border-bottom text-end">
+                    <p style="color: #444444; font-size: 14px">
+                      <b>Capacity</b>
+                    </p>
+                  </td>
+                  <td></td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                  <td class="border-top border-bottom">
+                    <p
+                      style="font-size: 14px; color: #444444; font-weight: 400"
+                    >
+                      Attached <img src="images/Download_1.png"">
+                    </p>
+                  </td>
+                </tr>
               </tbody>
             </table>
-            <div style="width: 80%; text-align: end">
-              <h1>Comments</h1>
-              <div style="display: flex; justify-content: end">
-                <div
-                  style="
-                    padding: 1rem;
-                    border: 1px solid #cbcbcb;
-                    border-radius: 10px;
-                    width: max-content;
-                  "
-                >
-                  <div>
-                    <p
-                      style="
-                        text-align: end;
-                        background-color: #6d6d6d;
-                        padding: 0.5rem;
-                        border-radius: 15px;
-                        border-top-right-radius: 0;
-                        color: white;
-                        margin-bottom: 0;
-                      "
-                    >
-                      You did your job well
-                    </p>
-                    <span>9:25 am</span>
-                    <p>You can upload Business licenses </p>
-                  
+
+            <div class="comments_main">
+              <h3>Comments</h3>
+              <div class="comments_main_in">
+                <div class="comments_in">
+                  <div class="jobw_well">You did your job well!</div>
+                  <div class="time-am">9:25 AM</div>
+
+                  <div class="icon_type">
+                    <img
+                      src="images/comment_3.png"
+                      width="32px"
+                      height="32px"
+                    />
+                    <div class="typehere-bx">
+                      Please type here for any additional details from Vendors
+                    </div>
+                  </div>
+
+                  <div class="bot_just">Bot・Just now</div>
+
+                  <div class="type_reply justify-content-between">
+                    <input type="text" placeholder="Type comments..." />
+
+                    <span>
+                      <a href="#"> <img src="images/Send_2.png" /></a
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="comments_in">
+                  <div class="jobw_well">You did your job well!</div>
+                  <div class="time-am">9:25 AM</div>
+
+                  <div class="icon_type">
+                    <img
+                      src="images/comment_3.png"
+                      width="32px"
+                      height="32px"
+                    />
+                    <div class="typehere-bx">
+                      Please type here for any additional details from Vendors
+                    </div>
+                  </div>
+
+                  <div class="bot_just">Bot・Just now</div>
+
+                  <div class="type_reply justify-content-between">
+                    <input type="text" placeholder="Type comments..." />
+
+                    <span>
+                      <a href="#"> <img src="images/Send_2.png" /></a
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="comments_in">
+                  <div class="jobw_well">You did your job well!</div>
+                  <div class="time-am">9:25 AM</div>
+
+                  <div class="icon_type">
+                    <img
+                      src="images/comment_3.png"
+                      width="32px"
+                      height="32px"
+                    />
+                    <div class="typehere-bx">
+                      Please type here for any additional details from Vendors
+                    </div>
+                  </div>
+
+                  <div class="bot_just">Bot・Just now</div>
+
+                  <div class="type_reply justify-content-between">
+                    <input type="text" placeholder="Type comments..." />
+
+                    <span>
+                      <a href="#"> <img src="images/Send_2.png" /></a
+                    ></span>
+                  </div>
                 </div>
               </div>
             </div>
-          
           </div>
         </div>
       </div>
