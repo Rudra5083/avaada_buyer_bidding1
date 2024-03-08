@@ -254,12 +254,12 @@ label {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900);
 }
-
+/* 
 .form-h {
   height: 49px;
   border: #c9c9c9 solid 1px;
   padding: 10px 40px;
-}
+} */
 
 .mt-4 {
   margin-top: 0.5rem !important;
@@ -2118,7 +2118,7 @@ header {
   color: white;
 }
 .form-control {
-  height: 2rem;
+  height: 3rem;
 }
 .error1 {
   color: red;
@@ -2469,4 +2469,19 @@ a {
   display: flex;
   align-items: center;
   gap: 0.5rem rem;
+}
+.vendor1 {
+  font-size: 15px;
+  color: #3767f0;
+  cursor: pointer;
+}
+.d {
+  display: flex;
+  align-items: center;
+}
+.custom-search-input {
+  padding: 3px;
+  border: solid 1px #e4e4e4;
+  border-radius: 6px;
+  background-color: #fff;
 }

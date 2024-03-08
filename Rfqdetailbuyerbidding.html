@@ -93,8 +93,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-              Buyer Bidding
-
+                Buyer Bidding
               </a>
 
               <div class="dropdown">
@@ -117,11 +116,11 @@
             <ul>
               <li><a href="#">Dashboard</a></li>
               <li><a href="Projectlistingbuyerbidding.html">Projects</a></li>
-              <li><a href="#">Vendor</a></li>
-              <li><a href="Rfqlisting.html">RFQ</a></li>
+              <li><a href="existing_vendors.html">Vendor</a></li>
+              <li><a href="Listingrfqbuyerbidding.html">RFQ</a></li>
               <li><a href="#">Report</a></li>
               <li><a href="Packagebuyerbidding.html">Packages</a></li>
-              <li><a href="#">Logout</a></li>
+              <li><a href="index.html">Logout</a></li>
               <!-- <li><a href="#">Accounts</a></li> -->
             </ul>
           </div>
@@ -251,13 +250,12 @@
                           No
                         </button>
                         <a
-                        href="Rfqbuyerbidding.html"
-                        type="button"
-                        class="btn btn-success"
-                     
-                      >
-                        Yes
-                      </a>
+                          href="Rfqbuyerbidding.html"
+                          type="button"
+                          class="btn btn-success"
+                        >
+                          Yes
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1737,36 +1735,34 @@
       </div>
     </section>
     <div
-    class="modal success_modal hidemodal"
-    id="successModal"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="successModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-      
-          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" fdprocessedid="f6w7xe" onclick="closeModalAndReload()"></button>
-        </div>
-        <div class="modal-body trigger_listing">
-            <img src="images/check-circle.png" alt=""/>
-    
-          <p>BOQ updated successfully</p>
-          <button
-          type="button"
-          class="btn btn-success"
-      
-        >
-        Done
-        </button>
+      class="modal success_modal hidemodal"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+              fdprocessedid="f6w7xe"
+              onclick="closeModalAndReload()"
+            ></button>
+          </div>
+          <div class="modal-body trigger_listing">
+            <img src="images/check-circle.png" alt="" />
 
+            <p>BOQ updated successfully</p>
+            <button type="button" class="btn btn-success">Done</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
     <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
 
     <script src="js/popper.min.js"></script>
@@ -1878,22 +1874,22 @@
       }
     </script>
     <script>
-        function handleNoButtonClicks() {
-          // Show the No modal
-          $("#noModal").modal("show");
-      
-          // You can add additional logic if needed
-        }
-      
-        function handleYesButtonClick() {
-          // Add your logic for confirming the action
-      
-          // Close the edit BOQ modal
-          $("#editBOQModal").modal("hide");
-      
-          // Show the success modal
-          $("#successModal").modal("show");
-        }
-      </script>
+      function handleNoButtonClicks() {
+        // Show the No modal
+        $("#noModal").modal("show");
+
+        // You can add additional logic if needed
+      }
+
+      function handleYesButtonClick() {
+        // Add your logic for confirming the action
+
+        // Close the edit BOQ modal
+        $("#editBOQModal").modal("hide");
+
+        // Show the success modal
+        $("#successModal").modal("show");
+      }
+    </script>
   </body>
 </html>

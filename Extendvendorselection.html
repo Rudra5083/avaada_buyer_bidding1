@@ -93,8 +93,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-              Buyer Bidding
-
+                Buyer Bidding
               </a>
 
               <div class="dropdown">
@@ -117,11 +116,11 @@
             <ul>
               <li><a href="#">Dashboard</a></li>
               <li><a href="Projectlistingbuyerbidding.html">Projects</a></li>
-              <li><a href="#">Vendor</a></li>
-              <li><a href="Rfqlisting.html">RFQ</a></li>
+              <li><a href="existing_vendors.html">Vendor</a></li>
+              <li><a href="Listingrfqbuyerbidding.html">RFQ</a></li>
               <li><a href="#">Report</a></li>
               <li><a href="Packagebuyerbidding.html">Packages</a></li>
-              <li><a href="#">Logout</a></li>
+              <li><a href="index.html">Logout</a></li>
               <!-- <li><a href="#">Accounts</a></li> -->
             </ul>
           </div>
@@ -138,10 +137,6 @@
                   <div class="timer-box">
                     <div class="timer-number">12</div>
                     <div class="timer-text">Day</div>
-                  </div>
-                  <div class="timer-box">
-                    <div class="timer-number">18</div>
-                    <div class="timer-text">Hours</div>
                   </div>
 
                   <div class="timer-box">
@@ -196,44 +191,88 @@
               </div>
 
               <div class="create_listing_projects">
-                <button class="vendor_btns vendor_maine_content1" data-toggle="modal" data-target="#approvepublishModal">
-                    Extend Vendor
+                <button
+                  class="vendor_btns vendor_maine_content1"
+                  data-toggle="modal"
+                  data-target="#approvepublishModal"
+                >
+                  Extend Vendor
                 </button>
                 <!-- Extend Vendor Modal -->
-                <div class="modal fade" id="approvepublishModal" tabindex="-1" role="dialog" aria-labelledby="approvepublishModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" fdprocessedid="rw9p" onclick="reloadPage()"></button>
-                            </div>
-                            <div class="modal-body trigger_listing">
-                                <img src="images/check-circle.png" alt=""/>
-                                <h5 class="modal-title" id="approvepublishModalLabel">Extend Vendor Invitiation</h5>
-                                <p>On Approval of this RFQ, the bidding process will be initiated & invite will be published to respective Vendors</p>
-                                <p>Do you want to continue?</p>
-                                <div class="clear_btn_status">
-                                    <button type="button" class="btn btn-secondary" onclick="closeApproveModal()">No</button>
-                                    <button type="button" class="btn btn-success" >Yes</button>
-                                </div>
-                            </div>
+                <div
+                  class="modal fade"
+                  id="approvepublishModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="approvepublishModalLabel"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                          fdprocessedid="rw9p"
+                          onclick="reloadPage()"
+                        ></button>
+                      </div>
+                      <div class="modal-body trigger_listing">
+                        <img src="images/check-circle.png" alt="" />
+                        <h5 class="modal-title" id="approvepublishModalLabel">
+                          Extend Vendor Invitiation
+                        </h5>
+                        <p>
+                          On Approval of this RFQ, the bidding process will be
+                          initiated & invite will be published to respective
+                          Vendors
+                        </p>
+                        <p>Do you want to continue?</p>
+                        <div class="clear_btn_status">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            onclick="closeApproveModal()"
+                          >
+                            No
+                          </button>
+                          <button type="button" class="btn btn-success">
+                            Yes
+                          </button>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <button style="  font-size: 13px;
-                border-radius: 6px;
-                padding: 6px;" class="vendor_btn vendor_maine_content1" href="#" fdprocessedid="my5iyj">
-                    Download
-                  </button>
-                <a style="  font-size: 13px;
-                border-radius: 6px;
-                padding: 6px;" class="vendor_btn vendor_maine_content1" href="Technicalcomparison.html" fdprocessedid="my5iyj">
-                    Technical Evaluation
+                <button
+                  style="font-size: 13px; border-radius: 6px; padding: 6px"
+                  class="vendor_btn vendor_maine_content1"
+                  href="#"
+                  fdprocessedid="my5iyj"
+                >
+                  Download
+                </button>
+                <a
+                  style="font-size: 13px; border-radius: 6px; padding: 6px"
+                  class="vendor_btn vendor_maine_content1"
+                  href="Technicalcomparison.html"
+                  fdprocessedid="my5iyj"
+                >
+                  Technical Evaluation
                 </a>
-                  <button style="  font-size: 13px;
-                  border-radius: 6px;
-                  padding: 6px;" class="vendor_btn vendor_maine_content1" href="#" fdprocessedid="my5iyj">
-                    Commercial Evaluation
-                  </button>
+                <button
+                  style="font-size: 13px; border-radius: 6px; padding: 6px"
+                  class="vendor_btn vendor_maine_content1"
+                  href="#"
+                  fdprocessedid="my5iyj"
+                >
+                  Commercial Evaluation
+                </button>
 
                 <a
                   class="vendor_btn vendor_maine_content"
@@ -289,13 +328,9 @@
                         >
                           No
                         </button>
-                        <button
-                        type="button"
-                        class="btn btn-success"
-                    
-                      >
-                        Yes
-                      </button>
+                        <button type="button" class="btn btn-success">
+                          Yes
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -303,339 +338,527 @@
               </div>
             </div>
             <div id="modal" class="modal">
-                <!-- Modal content -->
-                <div>
-                  <h2>Update BOQ</h2>
-                  <!-- Add your modal content here -->
-                  <!-- For example, a form for updating BOQ -->
-                  <form>
-                    <!-- Your form elements go here -->
-                    <input type="text" placeholder="New BOQ value">
-                    <button type="button" onclick="confirmUpdateBOQ()">Update</button>
-                  </form>
-                  <button onclick="closeModal()">Close</button>
-                </div>
+              <!-- Modal content -->
+              <div>
+                <h2>Update BOQ</h2>
+                <!-- Add your modal content here -->
+                <!-- For example, a form for updating BOQ -->
+                <form>
+                  <!-- Your form elements go here -->
+                  <input type="text" placeholder="New BOQ value" />
+                  <button type="button" onclick="confirmUpdateBOQ()">
+                    Update
+                  </button>
+                </form>
+                <button onclick="closeModal()">Close</button>
               </div>
-              
-              <div  class="listing_main" style="overflow-x: scroll;"  >
-                <table class="rfq-detail-tble">
-                  <thead>
-                    <tr>
-                      <th><input type="checkbox"></th>
-                      <th class="vendor_tabels">
-                        Item No <img src="images/code.png" alt="">
-                      </th>
-                      <th class="vendor_tabels tbl_w">
-                        Description<img src="images/code.png" alt="">
-                      </th>
-                      <th class="vendor_tabels tbl_w">
-                        HSN/SAC Code
-                        <img src="images/code.png" alt="">
-                      </th>
-                      <th class="vendor_tabels tbl_w">
-                        Units <img src="images/code.png" alt="">
-                      </th>
-                      <th class="vendor_tabels">
-                        Qty
-                        <img src="images/code.png" alt="">
-                      </th>
-                      <th class="vendor_tabels">
-                        Rate in Rupees <img src="images/code.png" alt="">
-                      </th>
-                      <th class="vendor_tabels">
-                        Amount
-                        <img src="images/code.png" alt="">
-                      </th>
-                      <th class="vendor_tabels tbl_w">
-                        Remarks <img src="images/code.png" alt="">
-                      </th>
-  
-                      <th class="vendor_tabels">
-                       
-                      </th>
-  
-                    </tr>
-  
-  
-                    <tr class="maine_tr_vendor">
-                      <td><input type="checkbox"></td>
-  
-                      <td>1</td>
-                      <td class="tbl_w">
-                       
-  
-                        <input class="form-control" type="text" placeholder="New Product Materials" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="GHSJ6781" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="Solar Equipment" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="Solar Equipment" value="1">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="₹ 20,0000" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled="">
-                        
-                      </td>
-  
-                      <td>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                          <path style="color: red" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
-                        </svg>
-                        
-                      </td>
-  
-                     
-                    </tr>
-  
-  
-                    <tr class="maine_tr_vendor">
-                      <td><input type="checkbox"></td>
-  
-                      <td>2</td>
-                      <td class="tbl_w">
-                       
-  
-                        <input class="form-control" type="text" placeholder="New Product Materials" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="GHSJ6781" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="Wind Turbines" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="2">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="₹ 15,0000" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled="">
-                        
-                      </td>
-  
-                      <td>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                          <path style="color: red" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
-                        </svg>
-                        
-                      </td>
-  
-                     
-                    </tr>
-  
-  
-                    <tr class="maine_tr_vendor">
-                      <td><input type="checkbox"></td>
-  
-                      <td>3</td>
-                      <td class="tbl_w">
-                       
-  
-                        <input class="form-control" type="text" placeholder="New Product Materials" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="GHSJ6781" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="Hydroelectric" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="4">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="₹ 25,0000" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled="">
-                        
-                      </td>
-  
-                      <td>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                          <path style="color: red" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
-                        </svg>
-                        
-                      </td>
-  
-                     
-                    </tr>
-  
-  
-                    <tr class="maine_tr_vendor">
-                      <td><input type="checkbox"></td>
-  
-                      <td>4</td>
-                      <td class="tbl_w">
-                       
-  
-                        <input class="form-control" type="text" placeholder="New Product Materials" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="GHSJ6781" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="Construction Mat." aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="1">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="₹ 30,0000" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled="">
-                        
-                      </td>
-  
-                      <td>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                          <path style="color: red" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
-                        </svg>
-                        
-                      </td>
-  
-                     
-                    </tr>
-                    <tr class="maine_tr_vendor">
-                        <td><input type="checkbox"></td>
-    
-                        <td>5</td>
-                        <td class="tbl_w">
-                         
-    
-                          <input class="form-control" type="text" placeholder="New Product Materials" aria-label="Disabled input example" disabled="">
-                        </td>
-                        <td class="tbl_w">
-                          <input class="form-control" type="text" placeholder="GHSJ6781" aria-label="Disabled input example" disabled="">
-                        </td>
-                        <td class="tbl_w">
-                          <input class="form-control" type="text" placeholder="Wind Turbines" aria-label="Disabled input example" disabled="">
-                        </td>
-                        <td>
-                          <input class="form-control" type="text" placeholder="" value="2">
-                        </td>
-                        <td>
-                            <input class="form-control" type="text" placeholder="" value="">
-                          </td>
-                        <td>
-                          <input class="form-control" type="text" placeholder="₹ 10,0000" aria-label="Disabled input example" disabled="">
-                        </td>
-                        <td>
-                          <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled="">
-                          
-                        </td>
-    
-                        <td>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                            <path style="color: red" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
-                          </svg>
-                          
-                        </td>
-    </tr>
-                       
-                      </tr>        <tr class="maine_tr_vendor">
-                      <td><input type="checkbox"></td>
-  
-                      <td>6</td>
-                      <td class="tbl_w">
-                       
-  
-                        <input class="form-control" type="text" placeholder="New Product Materials" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="GHSJ6781" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td class="tbl_w">
-                        <input class="form-control" type="text" placeholder="Hydroelectric" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="5">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" value="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="₹ 40,0000" aria-label="Disabled input example" disabled="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled="">
-                        
-                      </td>
-  
-                      <td>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                          <path style="color: red" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
-                        </svg>
-                        
-                      </td>
-  
-                     
-                    </tr>
-                    <tr class="maine_tr_vendor">
-                        <td><input type="checkbox"></td>
-    
-                        <td>7</td>
-                        <td class="tbl_w">
-                         
-    
-                          <input class="form-control" type="text" placeholder="New Product Materials" aria-label="Disabled input example" disabled="">
-                        </td>
-                        <td class="tbl_w">
-                          <input class="form-control" type="text" placeholder="GHSJ6781" aria-label="Disabled input example" disabled="">
-                        </td>
-                        <td class="tbl_w">
-                          <input class="form-control" type="text" placeholder="Construction Mat." aria-label="Disabled input example" disabled="">
-                        </td>
-                        <td>
-                          <input class="form-control" type="text" placeholder="" value="">
-                        </td>
-                        <td>
-                            <input class="form-control" type="text" placeholder="" value="">
-                          </td>
-                        <td>
-                          <input class="form-control" type="text" placeholder="₹ 22,0000" aria-label="Disabled input example" disabled="">
-                        </td>
-                        <td>
-                          <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled="">
-                          
-                        </td>
-    
-                        <td>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                            <path style="color: red" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
-                          </svg>
-                          
-                        </td>
-    
-                       
-                      </tr>
-                 
-                  </thead>
-                 
-                   
-                    
-                 
-                </table>
-              </div>
+            </div>
+
+            <div class="listing_main" style="overflow-x: scroll">
+              <table class="rfq-detail-tble">
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" /></th>
+                    <th class="vendor_tabels">
+                      Item No <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels tbl_w">
+                      Description<img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels tbl_w">
+                      HSN/SAC Code
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels tbl_w">
+                      Units <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Qty
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Rate in Rupees <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Amount
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels tbl_w">
+                      Remarks <img src="images/code.png" alt="" />
+                    </th>
+
+                    <th class="vendor_tabels"></th>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>1</td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="GHSJ6781"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Solar Equipment"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Solar Equipment"
+                        value="1"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="₹ 20,0000"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>2</td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="GHSJ6781"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Wind Turbines"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value="2"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="₹ 15,0000"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>3</td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="GHSJ6781"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Hydroelectric"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value="4"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="₹ 25,0000"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>4</td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="GHSJ6781"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Construction Mat."
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value="1"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="₹ 30,0000"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>5</td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="GHSJ6781"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Wind Turbines"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value="2"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="₹ 10,0000"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>6</td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="GHSJ6781"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Hydroelectric"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value="5"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="₹ 40,0000"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>7</td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="New Product Materials"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="GHSJ6781"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td class="tbl_w">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Construction Mat."
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        value=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="₹ 22,0000"
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder=""
+                        aria-label="Disabled input example"
+                        disabled=""
+                      />
+                    </td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
             <div class="create_listing_project1">
               <a
                 class="vendor_btn vendor_maine_content1"
@@ -650,11 +873,7 @@
                 <p class="maine_btn_bom_block">BOM</p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
+                    <a class="vendor_btn vendor_maine_content1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -692,11 +911,7 @@
                 <p class="maine_btn_bom_block">Tendor Drawing</p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
+                    <a class="vendor_btn vendor_maine_content1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -734,11 +949,7 @@
                 <p class="maine_btn_bom_block">Technical Specification</p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
+                    <a class="vendor_btn vendor_maine_content1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -791,11 +1002,7 @@
                 </p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
+                    <a class="vendor_btn vendor_maine_content1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -820,11 +1027,7 @@
                 </p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
+                    <a class="vendor_btn vendor_maine_content1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -848,11 +1051,7 @@
                 </p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
+                    <a class="vendor_btn vendor_maine_content1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -893,11 +1092,7 @@
                 <p class="maine_btn_bom_block">ABAC Policy</p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
+                    <a class="vendor_btn vendor_maine_content1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -940,11 +1135,7 @@
                 </p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
+                    <a class="vendor_btn vendor_maine_content1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1000,7 +1191,6 @@
                 >
                   + Invite New Vendor
                 </a>
-        
               </div>
             </div>
             <!-- Contact Modal -->
@@ -1348,52 +1538,49 @@
             </div>
             <div class="closebtn_submit_block_btn">
               <button type="button" class="btn clear_btn">Close</button>
-             
 
               <button
-              type="button"
-              class="btn btn-success save_next_btn"
-              onclick="openCongratulationsModal()"
-          >
-          Update
-          </button>
+                type="button"
+                class="btn btn-success save_next_btn"
+                onclick="openCongratulationsModal()"
+              >
+                Update
+              </button>
             </div>
             <div
-                  class="modal fade"
-                  id="congratulationsModal"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="congratulationsModalLabel"
-                  aria-hidden="true"
-                >
-                  <div
-                    class="modal-dialog modal-dialog-centered"
-                    role="document"
-                  >
-                    <div class="modal-content trigger_listing">
-                      <div class="modal-header">
-                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" fdprocessedid="rw9p" onclick="reloadPage()"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="images/check-circle.png" alt="" />
-                        <h5 class="modal-title" id="congratulationsModalLabel">
-                            Congratulations!                        </h5>
-                        <p
-                          style="
-                            color: black;
-                            font-weight: 400;
-                            font-size: 18px;
-                          "
-                        >
-                        RFQ has been extended successfully with newly added vendor.
-                        </p>
-                        <button type="button" class="btn btn-success">
-                          Done
-                        </button>
-                      </div>
-                    </div>
+              class="modal fade"
+              id="congratulationsModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="congratulationsModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content trigger_listing">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      fdprocessedid="rw9p"
+                      onclick="reloadPage()"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/check-circle.png" alt="" />
+                    <h5 class="modal-title" id="congratulationsModalLabel">
+                      Congratulations!
+                    </h5>
+                    <p style="color: black; font-weight: 400; font-size: 18px">
+                      RFQ has been extended successfully with newly added
+                      vendor.
+                    </p>
+                    <button type="button" class="btn btn-success">Done</button>
                   </div>
                 </div>
+              </div>
+            </div>
             <div class="pagination_outer">
               <nav aria-label="Page navigation example">
                 <ul class="pagination">
@@ -1438,60 +1625,79 @@
       </div>
     </section>
     <div
-    class="modal success_modal hidemodal"
-    id="successModal"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="successModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-      
-          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" fdprocessedid="f6w7xe" onclick="closeModalAndReload()"></button>
-        </div>
-        <div class="modal-body trigger_listing">
-            <img src="images/check-circle.png" alt=""/>
-    
-          <p>BOQ updated successfully</p>
-          <button
-          type="button"
-          class="btn btn-success"
-      
-        >
-        Done
-        </button>
+      class="modal success_modal hidemodal"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+              fdprocessedid="f6w7xe"
+              onclick="closeModalAndReload()"
+            ></button>
+          </div>
+          <div class="modal-body trigger_listing">
+            <img src="images/check-circle.png" alt="" />
 
+            <p>BOQ updated successfully</p>
+            <button type="button" class="btn btn-success">Done</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Submit RFQ modal -->
-<div class="modal fade" id="submitRFQModal" tabindex="-1" role="dialog" aria-labelledby="submitRFQModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+
+    <!-- Submit RFQ modal -->
+    <div
+      class="modal fade"
+      id="submitRFQModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="submitRFQModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="submitRFQModalLabel">Submit RFQ Modal</h5>
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" fdprocessedid="rw9p" onclick="reloadPage()"></button>
-                
+          <div class="modal-header">
+            <h5 class="modal-title" id="submitRFQModalLabel">
+              Submit RFQ Modal
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+              fdprocessedid="rw9p"
+              onclick="reloadPage()"
+            ></button>
+          </div>
 
-            </div>
-            
-            <div class="modal-body trigger_listing">
-        <div>        <img src="images/check-circle.png" alt=""></div>
+          <div class="modal-body trigger_listing">
+            <div><img src="images/check-circle.png" alt="" /></div>
 
-                <p>New RFQ has been successfully Created<br>
-                RFQ No. xxxxxx</p>
-                <a href="Listingrfqbuyerbidding.html" type="button" class="btn btn-success" fdprocessedid="e1jt5">
-                    Done
-                </a>
-            </div>
-   
+            <p>
+              New RFQ has been successfully Created<br />
+              RFQ No. xxxxxx
+            </p>
+            <a
+              href="Listingrfqbuyerbidding.html"
+              type="button"
+              class="btn btn-success"
+              fdprocessedid="e1jt5"
+            >
+              Done
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
     <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
 
@@ -1508,25 +1714,25 @@
     </script> -->
     <!-- Add this script at the end of your HTML document, after the modal HTML -->
     <script>
-        // Function to close the first modal
-        function closeApproveModal() {
-          $("#approvepublishModal").modal("hide");
-        }
-  
-        // Function to open the second modal and close the first modal
-        function openCongratulationsModal() {
-          // Close the first modal
-          closeApproveModal();
-  
-          // Open the second modal
-          $("#congratulationsModal").modal("show");
-        }
-  
-        // Use the show.bs.modal event of the second modal to close the first modal
-        $("#congratulationsModal").on("show.bs.modal", function (e) {
-          closeApproveModal();
-        });
-      </script>
+      // Function to close the first modal
+      function closeApproveModal() {
+        $("#approvepublishModal").modal("hide");
+      }
+
+      // Function to open the second modal and close the first modal
+      function openCongratulationsModal() {
+        // Close the first modal
+        closeApproveModal();
+
+        // Open the second modal
+        $("#congratulationsModal").modal("show");
+      }
+
+      // Use the show.bs.modal event of the second modal to close the first modal
+      $("#congratulationsModal").on("show.bs.modal", function (e) {
+        closeApproveModal();
+      });
+    </script>
     <script>
       function validateForm() {
         // Reset error messages
@@ -1624,59 +1830,59 @@
       }
     </script>
     <script>
-        function handleNoButtonClicks() {
-          // Show the No modal
-          $("#noModal").modal("show");
-      
-          // You can add additional logic if needed
-        }
-      
-        function handleYesButtonClick() {
-          // Add your logic for confirming the action
-      
-          // Close the edit BOQ modal
-          $("#editBOQModal").modal("hide");
-      
-          // Show the success modal
-          $("#successModal").modal("show");
-        }
-      </script>
-      
-      <script>
-        function submitrfqlistingClick() {
-            // Your existing logic for handling the button click (if any)
+      function handleNoButtonClicks() {
+        // Show the No modal
+        $("#noModal").modal("show");
 
-            // Open the Bootstrap modal for RFQ submission with the ID 'submitRFQModal'
-            $('#submitRFQModal').modal('show');
-        }
-        function reloadPage() {
-            // Reload the current page
-            location.reload();
-        }
+        // You can add additional logic if needed
+      }
+
+      function handleYesButtonClick() {
+        // Add your logic for confirming the action
+
+        // Close the edit BOQ modal
+        $("#editBOQModal").modal("hide");
+
+        // Show the success modal
+        $("#successModal").modal("show");
+      }
     </script>
-       <script>
-        // Add your custom scripts here
-        function closeApproveModal() {
-            // Add functionality to close the modal if needed
-        }
 
-        function openCongratulationsModal() {
-            // Add functionality to open the Congratulations modal if needed
-        }
+    <script>
+      function submitrfqlistingClick() {
+        // Your existing logic for handling the button click (if any)
 
-        function reloadPage() {
-            // Add functionality to reload the page if needed
-        }
+        // Open the Bootstrap modal for RFQ submission with the ID 'submitRFQModal'
+        $("#submitRFQModal").modal("show");
+      }
+      function reloadPage() {
+        // Reload the current page
+        location.reload();
+      }
     </script>
     <script>
-        // Add your custom scripts here
-        function openCongratulationsModal() {
-            $('#congratulationsModal').modal('show');
-        }
+      // Add your custom scripts here
+      function closeApproveModal() {
+        // Add functionality to close the modal if needed
+      }
 
-        function reloadPage() {
-            // Add functionality to reload the page if needed
-        }
+      function openCongratulationsModal() {
+        // Add functionality to open the Congratulations modal if needed
+      }
+
+      function reloadPage() {
+        // Add functionality to reload the page if needed
+      }
+    </script>
+    <script>
+      // Add your custom scripts here
+      function openCongratulationsModal() {
+        $("#congratulationsModal").modal("show");
+      }
+
+      function reloadPage() {
+        // Add functionality to reload the page if needed
+      }
     </script>
   </body>
 </html>
