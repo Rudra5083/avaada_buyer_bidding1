@@ -1896,20 +1896,21 @@ header {
 }
 .detail_block_1 {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 1rem;
 }
 .vendor_maine_content1 {
   background-color: #f4f6f9;
   color: #000;
   border: 1px solid #9c9696;
+  margin-top: 1rem;
 }
 .btn_uloadfile {
   background-color: #f6f5f5;
 }
 .listing_btn_uploadfile_download {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 1rem;
   margin-top: -10px;
 }
@@ -1970,9 +1971,6 @@ header {
   border-radius: 5px;
   border: 5px rgb(24, 38, 185);
 }
-.modal-header {
-  border-bottom: none;
-}
 
 /* Detail Package Code Css */
 
@@ -2009,7 +2007,7 @@ header {
 }
 .create_listing_project1 {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 20px;
   margin-top: 1rem;
 }
@@ -2117,9 +2115,7 @@ header {
   height: 2rem;
   color: white;
 }
-.form-control {
-  height: 3rem;
-}
+
 .error1 {
   color: red;
   font-size: 17px;
@@ -2433,9 +2429,11 @@ tbody tr:nth-child(odd) {
   justify-content: space-between !important;
 }
 .create_vendor_listing_block {
-  background-color: #9c9696;
+  background-color: #dfdede;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
   font-family: sans-serif;
 }
 
@@ -2456,7 +2454,7 @@ a {
 
 .create_listing_projects {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 1rem;
 }
 .block_listing_detail {
@@ -2484,4 +2482,45 @@ a {
   border: solid 1px #e4e4e4;
   border-radius: 6px;
   background-color: #fff;
+}
+.vendor_maine_package {
+  width: 35% !important;
+  margin-bottom: 2rem;
+}
+.package_listing_block_body {
+  margin-top: 2rem;
+}
+
+.header_lineitem {
+  display: flex;
+  margin-left: -15px;
+}
+
+.header-tb {
+  color: #000;
+  font-size: 16px;
+  padding: 7px 18px;
+  border-radius: 25px;
+  background: #d9d9d9;
+}
+.line-tb {
+  color: #fff;
+  font-size: 16px;
+  background: #44aafb;
+  padding: 7px 18px;
+  border-radius: 25px;
+  right: -16px;
+  position: relative;
+}
+
+.lets_package_number_listing {
+  margin-top: 1rem;
+}
+.modal-footer {
+  justify-content: start !important;
+}
+
+.lets_table_block_body {
+  color: #000 !important;
+  font-weight: 700 !important;
 }

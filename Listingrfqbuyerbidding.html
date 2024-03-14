@@ -169,9 +169,71 @@
           <div class="col-md-10">
             <div class="listing_projectss">
               <p class="listing_rfq">RFQ Listing</p>
-              <a class="vendor_btn create_vendor_listing_block" href="#">
-                Create New
-              </a>
+              <a
+                class="create_vendor_listing_block"
+                data-toggle="modal"
+                data-target="#createvendorlistlidityModal"
+                >+ Create New</a
+              >
+            </div>
+            <div
+              class="modal fade"
+              id="createvendorlistlidityModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Create New RFQ
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      fdprocessedid="rw9p"
+                      onclick="reloadPage()"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="header_lineitem">
+                      <span class="line-tb">Without Package</span>
+                      <span class="header-tb">Against Package</span>
+                    </div>
+                    <div class="lets_package_number_listing">
+                      <label style="margin-bottom: 1rem">Package No.</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        fdprocessedid="8achb"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="closebtn_submit_block_btn">
+                      <button
+                        type="button"
+                        class="btn clear_btn"
+                        fdprocessedid="0m5o66"
+                        data-dismiss="modal"
+                      >
+                        Clear
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-success save_next_btn"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="search_filter_outers ms-auto">
@@ -281,35 +343,35 @@
 
                 <button
                   style="font-size: 13px; border-radius: 6px; padding: 6px"
-                  class="vendor_btn vendor_maine_content1"
+                  class="vendor_maine_content1"
                   href="#"
                 >
                   Publish RFQ
                 </button>
                 <button
                   style="font-size: 13px; border-radius: 6px; padding: 6px"
-                  class="vendor_btn vendor_maine_content1"
+                  class="vendor_maine_content1"
                   href="#"
                 >
                   Reject
                 </button>
                 <button
                   style="font-size: 13px; border-radius: 6px; padding: 6px"
-                  class="vendor_btn vendor_maine_content1"
+                  class="vendor_maine_content1"
                   href="#"
                 >
                   Re-Upload
                 </button>
                 <button
                   style="font-size: 13px; border-radius: 6px; padding: 6px"
-                  class="vendor_btn vendor_maine_content1"
+                  class="vendor_maine_content1"
                   href="#"
                 >
                   Download
                 </button>
                 <button
                   style="font-size: 13px; border-radius: 6px; padding: 6px"
-                  class="vendor_btn vendor_maine_content1"
+                  class="vendor_maine_content1"
                   href="#"
                 >
                   Close RFQ
