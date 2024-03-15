@@ -2553,3 +2553,6 @@ a {
   color: #f37705 !important;
   font-weight: 600 !important;
 }
+.create_vendor_listing_block {
+  cursor: pointer;
+}
