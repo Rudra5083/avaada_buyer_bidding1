@@ -155,14 +155,14 @@ a.blue {
   position: absolute;
   color: #929292;
   left: 9px;
-  bottom: 14px;
+  bottom: 7px;
 }
 
 .lock {
   position: absolute;
   color: #929292;
   left: 9px;
-  bottom: 14px;
+  bottom: 7px;
 }
 
 .login-left {
@@ -254,17 +254,38 @@ label {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900);
 }
+.main_heading_name_fq {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
 /* 
 .form-h {
   height: 49px;
   border: #c9c9c9 solid 1px;
   padding: 10px 40px;
 } */
-
+.lets_td_table_vendor {
+  font-family: "inter" !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+}
+.modal_panel_text_block_body {
+  border: none !important;
+  padding: 2px;
+  background: none !important;
+}
 .mt-4 {
   margin-top: 0.5rem !important;
 }
 
+.lets_pakage_code_creation {
+  font-family: "Inter";
+  font-size: 14px;
+  color: #2a4898;
+  font-weight: 700;
+}
 .btn-log {
   width: 100%;
   background: rgb(2, 0, 36);
@@ -2523,4 +2544,12 @@ a {
 .lets_table_block_body {
   color: #000 !important;
   font-weight: 700 !important;
+}
+.active_lets_green {
+  color: #00ff00 !important;
+  font-weight: 600 !important;
+}
+.active_lets_orange {
+  color: #f37705 !important;
+  font-weight: 600 !important;
 }

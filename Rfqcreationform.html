@@ -126,9 +126,17 @@
           </div>
 
           <div class="col-md-10">
-            <div class="main_heading d-flex justify-content-between">
+            <div class="main_heading_name_fq">
               <div class="heading_vendor_name">
                 <h1>RFQ Creation Form</h1>
+              </div>
+              <div>
+                <label> Package Code: </label>
+                <label class="lets_pakage_code_creation">34234</label>
+              </div>
+              <div>
+                <label> Date: </label>
+                <label>12/3/2024</label>
               </div>
 
               <div class="timer_rfq_validity">
@@ -239,9 +247,6 @@
                       Amount (In INR)
                       <img src="images/code.png" alt="" />
                     </th>
-                    <th class="vendor_tabels">
-                      Remarks <img src="images/code.png" alt="" />
-                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -311,13 +316,6 @@
                       />
                     </td>
                     <td class="detail_block_1">
-                      <input
-                        class="form-control mainform"
-                        type="text"
-                        aria-label="Disabled input example"
-                        disabled
-                      />
-
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -399,13 +397,6 @@
                       />
                     </td>
                     <td class="detail_block_1">
-                      <input
-                        class="form-control mainform"
-                        type="text"
-                        aria-label="Disabled input example"
-                        disabled
-                      />
-
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -487,13 +478,6 @@
                       />
                     </td>
                     <td class="detail_block_1">
-                      <input
-                        class="form-control mainform"
-                        type="text"
-                        aria-label="Disabled input example"
-                        disabled
-                      />
-
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -575,13 +559,6 @@
                       />
                     </td>
                     <td class="detail_block_1">
-                      <input
-                        class="form-control mainform"
-                        type="text"
-                        aria-label="Disabled input example"
-                        disabled
-                      />
-
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -663,13 +640,6 @@
                       />
                     </td>
                     <td class="detail_block_1">
-                      <input
-                        class="form-control mainform"
-                        type="text"
-                        aria-label="Disabled input example"
-                        disabled
-                      />
-
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -751,13 +721,6 @@
                       />
                     </td>
                     <td class="detail_block_1">
-                      <input
-                        class="form-control mainform"
-                        type="text"
-                        aria-label="Disabled input example"
-                        disabled
-                      />
-
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -839,13 +802,6 @@
                       />
                     </td>
                     <td class="detail_block_1">
-                      <input
-                        class="form-control mainform"
-                        type="text"
-                        aria-label="Disabled input example"
-                        disabled
-                      />
-
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -866,6 +822,15 @@
             </div>
             <div class="create_listing_project1">
               <a class="vendor_btn vendor_maine_content1"> + Add Row </a>
+            </div>
+            <div class="package_listing_block_body">
+              <label>Remark</label>
+              <input
+                class="form-control vendor_maine_package"
+                type="text"
+                value=""
+                fdprocessedid="cynpkh"
+              />
             </div>
             <div class="listing_block_maine_allbtn">
               <div style="margin-top: 10px">
@@ -983,7 +948,7 @@
                 </div>
               </div>
               <div class="bar-bx">
-                <h2>Document Uploaded 20% of 100%</h2>
+                <h2>Document Upload Progress</h2>
 
                 <div class="progress-bar">
                   <div class="progress-bar-inner"></div>
@@ -1216,7 +1181,6 @@
                         aria-label="Close"
                       ></button>
                     </div>
-                    <hr />
                     <div class="modal-body">
                       <form id="vendorForm">
                         <div class="lets_modal_vendor">
