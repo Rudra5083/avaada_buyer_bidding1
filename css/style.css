@@ -2530,8 +2530,11 @@ a {
   background: #44aafb;
   padding: 7px 18px;
   border-radius: 25px;
-  right: -16px;
+  left: 16px !important;
   position: relative;
+}
+.lets_approve_block {
+  color: green;
 }
 
 .lets_package_number_listing {
